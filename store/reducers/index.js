@@ -1,7 +1,9 @@
-// import { combineReducers } from 'redux';
+import { combineReducers } from 'redux';
 
-// const rootReducer = combineReducers({
-//     // combine reducers from ./reducers
-// });
+import filterReducer from './filter/filter.reducer';
 
-// export default rootReducer;
+const rootReducer = combineReducers({
+    filters: filterReducer,
+});
+
+export default rootReducer;

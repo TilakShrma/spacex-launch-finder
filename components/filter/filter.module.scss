@@ -1,0 +1,27 @@
+.filter {
+
+    margin: 5px 5px;
+    padding: 5px 0px;
+
+    .header {
+        font-weight: lighter;
+        text-align: center;
+        width: 100%;
+
+        &:after {
+            content: '';
+            display: block;
+            margin: 0 auto;
+            width: 50%;
+            padding-top: 10px;
+            border-bottom: 1px solid blueviolet;
+        }
+    }
+
+    .content {       
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        row-gap: 10px;
+    }
+}

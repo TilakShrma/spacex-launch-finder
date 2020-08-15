@@ -1,0 +1,19 @@
+.filterBtn {
+    width: auto;
+    height: 25px;
+    letter-spacing: 0.5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 0.4em;
+    background-color: rgba(194, 255, 125, 0.7);
+
+    &:hover {
+        background-color: rgb(119, 214, 64);
+    }
+
+    &:focus {
+        background-color: rgb(119, 214, 64);
+        outline: none;
+    }
+}
