@@ -1,0 +1,18 @@
+body {
+    margin: 0;
+    padding: 20px 50px;
+    background-color: silver;
+
+    @media screen and (max-width: 400px) {
+        padding: 10px 10px;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+* {
+    box-sizing: border-box;
+}

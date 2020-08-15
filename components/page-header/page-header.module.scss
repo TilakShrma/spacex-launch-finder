@@ -1,0 +1,16 @@
+.header {
+    margin: 0;
+    padding: 0;
+
+    .content {
+        font-weight: bolder;
+        font-size: 1.5em;
+    }
+
+    @media screen and (max-width: 400px) {
+        .content {
+            font-size: 25px;
+        }
+    }
+}
+

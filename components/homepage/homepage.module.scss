@@ -1,0 +1,11 @@
+.homepage {
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+
+    @media screen and (max-width: 400px) {
+        padding-top: 0px;
+        display: flex;
+        flex-direction: column;
+    }
+}
