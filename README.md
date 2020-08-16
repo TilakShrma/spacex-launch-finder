@@ -15,3 +15,17 @@ yarn
 
 ## Tech Stack
 
+- **NextJS** : Boilerplate for creating server side rendered apps using reactJs
+- **Redux**  : Flux library for state management
+- **React**  : For creating UI components
+- **Re-select** : for creating memoized components
+
+
+## Lighthouse Report
+
+![Lighthouse_report](https://github.com/tilakshrma/spacex-launch-finder/blob/master/image.jpg?raw=true)
+
+## TODO's
+
+- Improve Accessibilty
+- Add unit tests
