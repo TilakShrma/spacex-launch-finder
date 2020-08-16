@@ -12,9 +12,9 @@ const FilterContainer = ({ year, launch, land }) => {
                 Filters
             </h2>
             <div>
-                <Filter {...year}/>
-                <Filter {...launch}/>
-                <Filter {...land}/>
+                <Filter filterKey='year' {...year}/>
+                <Filter filterKey='launch' {...launch}/>
+                <Filter filterKey='landing' {...land}/>
             </div>
         </div>
     );
