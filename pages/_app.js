@@ -6,7 +6,7 @@ import store from '../state/store';
 
 import '../styles/main.scss';
 
-class MyApp extends App {
+class SpaceXLaunchFinder extends App {
   render () {
     const {Component, pageProps} = this.props;
     return (
@@ -20,4 +20,4 @@ class MyApp extends App {
 const makeStore = () => store;
 const wrapper = createWrapper(makeStore);
 
-export default wrapper.withRedux(MyApp);
+export default wrapper.withRedux(SpaceXLaunchFinder);

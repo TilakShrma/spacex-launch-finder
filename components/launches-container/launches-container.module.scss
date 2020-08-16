@@ -1,9 +1,39 @@
 .container {
-    width: 70%;
-    border-radius: 3%;
-    background-color: white;
+    width: 80%;
+    border-radius: 10px;
+
+    .items {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        column-gap: 10px;
+        row-gap: 10px;
+        justify-items: center;
+    }
 
     @media screen and (max-width: 700px) {
-        width: 100%;
+
+        width: 80%;
+        margin: 0px auto;
+
+        .items {
+            display: grid;
+            grid-template-columns: 1fr;
+            justify-items: center;
+            row-gap: 10px;
+        }
+        
+    }
+
+    @media screen and (min-width: 701px) and (max-width: 1024px) {
+
+        width: 65%;
+
+        .items {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            justify-items: center;
+            row-gap: 10px;
+            column-gap: 10px;
+        }
     }
 }
