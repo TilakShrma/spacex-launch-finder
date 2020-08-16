@@ -8,6 +8,10 @@ const Index = () => {
     <div id='App'>
       <Head>
           <title> SpaceX Launch finder </title>
+          <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+          <meta name="keywords" content="NextJs, Javascript, spacex, server side redering" />
+          <meta name="description" content="SpaceX launch finder" />
+          <meta name="author" content="Tilak Sharma" />
       </Head>
       <main id='homepage'>
         <PageHeader />
