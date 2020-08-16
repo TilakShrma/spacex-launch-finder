@@ -1,4 +1,4 @@
-import { FETCH_ALL_LAUCHES, FETCHING_LAUNCHES, FETCH_FILTERED_LAUNCHES } from '../../actions/space-launch/space-launch.types';
+import { FETCHED_ALL_LAUCHES, FETCHING_LAUNCHES, FETCHED_FILTERED_LAUNCHES } from '../../actions/space-launch/space-launch.types';
 
 const INITIAL_STATE = {
     isLoading: false,
@@ -10,15 +10,16 @@ const spaceLaunchReducer = (state = INITIAL_STATE, action) => {
         case FETCHING_LAUNCHES: 
             return {
                 ...state,
+                launch_items: [],
                 isLoading: true,
             }
-        case FETCH_ALL_LAUCHES: 
+        case FETCHED_ALL_LAUCHES: 
             return {
                 ...state,
                 launch_items: action.payload,
                 isLoading: false,
             }
-        case FETCH_FILTERED_LAUNCHES:
+        case FETCHED_FILTERED_LAUNCHES:
             return {
                 ...state,
                 launch_items: action.payload,

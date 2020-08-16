@@ -1,4 +1,4 @@
-import { FETCHING_LAUNCHES ,FETCH_ALL_LAUCHES, FETCH_FILTERED_LAUNCHES } from './space-launch.types';
+import { FETCHING_LAUNCHES ,FETCHED_ALL_LAUCHES, FETCHED_FILTERED_LAUNCHES } from './space-launch.types';
 
 import { spacexService } from '../../../services';
 
@@ -12,7 +12,7 @@ export const fetchFilteredLaunches = (dispatch, filterKey, value) => {
     .getLaunches(getLaunchFilter(filterKey, value))
     .then(response => {
         dispatch({
-            type: FETCH_FILTERED_LAUNCHES,
+            type: FETCHED_FILTERED_LAUNCHES,
             payload: response
         });
     });
@@ -26,7 +26,7 @@ export const fetchAllLaunches = (dispatch) => {
     .getLaunches()
     .then(response => {
         dispatch({
-            type: FETCH_ALL_LAUCHES,
+            type: FETCHED_ALL_LAUCHES,
             payload: response,
         });
     });
