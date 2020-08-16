@@ -1,5 +1,8 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import { createStructuredSelector } from 'reselect';
+
+import { selectLaunchItems, selectIsLoading } from '../../state/selectors/space-launches/space-launches.selectors';
 
 import { fetchAllLaunches } from '../../state/actions/space-launch/space-launch.action';
 
@@ -48,9 +51,9 @@ class LaunchesContainer extends React.Component {
     };
 };
 
-const mapStateToProps = ({ launches }) => ({
-    isLoading: launches.isLoading,
-    launchItems: launches.launch_items,
+const mapStateToProps =  createStructuredSelector({
+    isLoading: selectIsLoading,
+    launchItems: selectLaunchItems,
 });
 
 const mapDispatchToProps = (dispatch) => ({
