@@ -23,7 +23,7 @@ yarn
 
 ## Lighthouse Report
 
-![Lighthouse_report](https://github.com/tilakshrma/spacex-launch-finder/blob/master/image.jpg?raw=true)
+![Lighthouse_report](https://github.com/TilakShrma/spacex-launch-finder/blob/master/docs/report-images/lighthouse_report.PNG)
 
 ## TODO's
 
