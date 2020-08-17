@@ -1,8 +1,9 @@
-const withSass = require('@zeit/next-sass');
 const withPwa = require('next-pwa');
+const runtimeCaching = require('next-pwa/cache')
 
-module.exports = withPwa(withSass({
+module.exports = withPwa({
     pwa: {
-        dest: "public"
+        dest: "public",
+        runtimeCaching,
     }
-}));
+});
