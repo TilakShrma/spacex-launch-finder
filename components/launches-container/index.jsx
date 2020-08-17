@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
 
@@ -20,7 +20,6 @@ class LaunchesContainer extends React.Component {
     componentDidMount() {
         this.props.fetchAllLaunches();
     }
-
     render() {
         const { isLoading, launchItems } = this.props;
 

@@ -53,5 +53,5 @@ const LaunchItemCard = (props) => {
     );
 };
 
-export default LaunchItemCard;
+export default React.memo(LaunchItemCard, (prevProps, nextProps) => prevProps === nextProps);
  
