@@ -1,0 +1,26 @@
+{
+    "name": "spacex-launch-finder",
+    "short_name": "spacex",
+    "icons": [
+        {
+            "src": "favicon.ico",
+            "sizes": "32x32 16x16",
+            "type": "image/x-icon"
+        },
+        {
+            "src": "/android-chrome-192x192",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/android-chrome-512x512",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#2196f3",
+    "background_color": "#2196f3",
+    "display": "standalone",
+    "scope": "/",
+    "start_url": "/"
+  }
