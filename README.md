@@ -27,5 +27,4 @@ yarn
 
 ## TODO's
 
-- Improve Accessibilty
 - Add unit tests
