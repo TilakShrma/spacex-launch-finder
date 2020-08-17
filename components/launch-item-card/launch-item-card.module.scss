@@ -27,7 +27,7 @@
             margin-left: 25px;
 
             .title {
-                color: rgb(29, 82, 98);
+                color: rgb(13, 49, 74);
             }
 
             .detail {
@@ -42,7 +42,9 @@
                 }
     
                 .detail_value {
-                    color: rgb(17, 180, 70);
+                    color: rgb(33, 79, 39);
+                    font-weight: 900;
+                    text-transform: capitalize;
                 }
             }
         }
