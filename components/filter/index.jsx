@@ -7,7 +7,7 @@ import styles from './filter.module.scss';
 const Filter = ({ filterKey, name, values }) => {
     return (
         <div className={styles.filter}>
-            <h4 className={styles.header}>{name}</h4>
+            <h3 className={styles.header}>{name}</h3>
             <div className={styles.content}>
                 {   
                     values.map(value => (
