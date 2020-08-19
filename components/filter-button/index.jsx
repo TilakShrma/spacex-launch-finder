@@ -5,7 +5,7 @@ import { fetchFilteredLaunches } from '../../state/actions/space-launch/space-la
 
 import styles from './filter-button.module.scss';
 
-const FilterButton = ({ value, filterLaunches, filterKey }) => {
+export const FilterButton = ({ value, filterLaunches, filterKey }) => {
     return (
         <button className={styles.filterBtn} onClick={() => filterLaunches(filterKey, value)}>
             {value}
@@ -16,5 +16,6 @@ const FilterButton = ({ value, filterLaunches, filterKey }) => {
 const mapDispatchToProps = (dispatch) => ({
     filterLaunches: (filterKey, value) => fetchFilteredLaunches(dispatch, filterKey, value), 
 });
+
 
 export default connect(null, mapDispatchToProps)(FilterButton);

@@ -1,29 +1,16 @@
 import React from 'react';
-import {shallow} from 'enzyme';
+import { shallow } from 'enzyme'
 
-import FilterButton from './index';
-import { iteratee } from 'lodash';
-
-const defaultProps = {
-    value: 2001,
-    filterLaunches: jest.fn(),
-    filterKey: 'year'
-};
-
-const setup = (options = {}) => {
-    const props = {
-        ...defaultProps,
-        ...options
-    };
-
-    const wrapper = shallow(<FilterButton {...props} />);
-
-    return {wrapper, props};
-};
+const {FilterButton} = require('./index');
 
 describe('<FilterButton />', () => {
-    it('renders', () => {
-        const {wrapper} = setup();
-        expect(wrapper.find('button.filterBtn')).toHaveLength(1);
+    it('renders without any error', () => {
+        const wrapper = shallow(<FilterButton />);
+        expect(wrapper.find('button')).toHaveLength(1);
+    });
+
+    it('renders filter value correctly', () => {
+        const wrapper = shallow(<FilterButton value='True'/>);
+        expect(wrapper.text()).toEqual('True');
     });
 });
